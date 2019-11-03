@@ -1,7 +1,7 @@
 const express = require("express");
 const morgan = require("morgan");
 const mongoose = require("mongoose");
-
+const cors = require("cors");
 const routes = require("./router");
 
 const app = express();
@@ -12,7 +12,7 @@ mongoose.Promise = global.Promise;
 
 app.use(morgan("short"));
 app.use(express.json());
-
+app.use(cors());
 app.use(routes);
 app.listen(3333, () => {
   console.log("Server is On");
