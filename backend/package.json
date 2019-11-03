@@ -1,0 +1,18 @@
+{
+  "name": "uni-ifce",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.7.7",
+    "morgan": "^1.9.1"
+  },
+  "scripts": {
+    "start": "node server",
+    "dev": "nodemon server"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.4"
+  }
+}
